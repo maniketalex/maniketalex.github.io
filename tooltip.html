@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="WOW-master/css/libs/animate.css">
+  <link rel="stylesheet" href="WOW-master/css/site.css">
+  <style>
+    .wow:first-child {
+      visibility:hidden;
+    }
+  </style>
+<style>
+.tooltip {
+  position: relative;
+  display: block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility:visible;
+  opacity: 1;
+}
+</style>
+</head>
+<body style="text-align:center;">
+
+<h2>Tooltip</h2>
+<p>Move the mouse over the text below:</p>
+
+<div class="tooltip wow slideInRight" data-wow-delay="2s">Hover over me
+  <span class="tooltiptext wow slideInRight" data-wow-delay="2s">Tooltip text</span>
+</div>
+
+</body>
+</html>
+ <script src="dist/wow.js"></script>
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>

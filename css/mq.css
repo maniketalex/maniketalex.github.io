@@ -1,0 +1,94 @@
+::-webkit-scrollbar{
+	width:15px; 
+}
+::-webkit-scrollbar-track{
+	box-shadow: inset 0px 0px 5px grey; 
+	border-radius:10px;
+
+}
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(0deg,#67F2DE ,#67F27B);
+	border-radius: 10px;
+    animation:animate 5s linear infinite;
+	transition: .5s linear;
+}
+.toggle{
+	width:100%;
+	color:white;
+	background-color:#001f44;
+	padding:0px;
+	font-family:;
+	display:none;
+}
+@media screen and (max-width: 600px){
+	
+	.toggle{
+		display:inline-block;
+		transition:0.5s;
+	}
+	ul{
+		width:100%;
+		height:auto;
+		padding:10px;
+		display:none;
+	}
+	ul li{
+		display:block;
+		text-align: center;
+	}
+	.active{
+		display:block;
+		padding: 5px;
+		transition:0.8s linear;
+
+	}
+	.toggle{
+		visibility:visible;
+		transition:all 500ms linear;
+
+	}
+	.row{
+		margin:5px;
+	}
+	.img-slide{
+		width:100%;
+		padding: 0px;
+		margin:0px;
+
+	}
+	.about{
+		width: auto;
+		height: auto;
+	}
+	.collapse{
+		width: auto;
+		height: auto;
+
+	}
+	.mission,.vision{
+		width: auto;
+		height: auto;
+		margin:5px;
+
+	}
+	.latest-news,.events,.tender,.vacancies{
+		width: auto;
+		height: auto;
+		margin:5px;
+}
+.img,.img2,.info{
+	width: auto;
+	height: auto;
+}
+footer{
+	height: auto;
+	width: auto;
+}
+footer h2{
+	font-size:16px;
+}
+.abt-tnb,.cnt-info,.emailus,.map{
+	width: auto;
+	height: auto;
+}
+}

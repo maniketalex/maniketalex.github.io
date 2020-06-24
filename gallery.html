@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid View</title>
+	<style type="text/css">
+		* {
+  box-sizing: border-box;
+}
+		.row{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.column{
+			flex:22%;
+			padding: 5px;
+			margin:5px;
+			flex-direction: row;
+		}
+		@media (max-width: 800px) {
+  .column {
+    flex:44%;
+    max-width: 50%;
+  }
+}
+.column img{
+	border:2px solid black;
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script type="text/javascript"src="js/wow.min.js"></script>
+	<script type="text/javascript">
+	new WOW().init();
+</script>
+</head>
+<body>
+	<center>
+	<h1>Image Gallery Of TNB college Bhagalpur</h1>
+</center>
+	<div class="row">
+		<div class="column">
+			<img src="image/tnb.jpg"style="height:300px;width:100%"class="wow slideInRight">
+			<img src="image/undraw_certificate_343v.png"style="height:100px;width:100%"class="wow slideInLeft">
+			<img src="image/logo.jpg"style="height:200px;width:100%"class="wow slideDown">
+			
+		</div>
+		<div class="column">
+			<img src="image/undraw_target_kriv.png"style="height:250px;width:100%">
+			<img src="image/undraw_before_dawn_bqrj.png"style="height:200px;width:100%">
+			<img src="image/princi_tnb.jpg"style="height:200px;width:100%">
+			
+			
+		</div>
+		<div class="column">
+			<img src="image/tnb.jpg"style="height:300px;width:100%"class="wow slideInLeft">
+			<img src="image/undraw_certificate_343v.png"style="height:100px;width:100%"class="wow slideInLeft">
+			<img src="image/logo.jpg"style="height:200px;width:100%"class="wow pulse"duration="1500ms">
+			
+			
+		</div>
+		<div class="column">
+			<img src="image/undraw_target_kriv.png"style="height:250px;width:100%">
+			<img src="image/undraw_before_dawn_bqrj.png"style="height:200px;width:100%">
+			<img src="image/princi_tnb.jpg"style="height:200px;width:100%">
+			
+			
+		</div>
+	</div>
+
+</body>
+</html>

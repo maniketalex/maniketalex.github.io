@@ -1,0 +1,320 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-family:Roboto;
+	box-sizing: border-box;
+}
+
+header{
+	padding:20px;
+	background-color:#533C64;
+	text-align: center;
+	color:white;
+}
+header h1{
+	animation:animate 2s linear;
+}
+@keyframes animate{
+	0%{
+		color:#533C64;
+	}
+	50%{
+		color:white;
+		letter-spacing:3px;
+	
+	}
+	75%{
+		color:white;
+		letter-spacing:2px;
+
+
+	}
+	100%{
+		letter-spacing:1px;
+		color:white;
+		
+
+	}
+}
+
+nav{
+	padding:16px;
+	background-color: #001f44;
+}
+nav ul{
+	list-style: none;
+}
+nav li{
+	display: inline;
+}
+nav a{
+	text-decoration:none;
+	padding:16px;
+	color:white;
+	background-color: #001f44;
+	font-size:18px;
+}
+nav a:hover{
+	background-color: red;
+}
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+.drp-content{
+	position: absolute;
+	display:none;
+	box-shadow: 0px 2px 5px green;
+	min-width:300px;
+	animation: apear 5s linear;
+	margin-top:15px;
+}
+@keyframes apear{
+	0%{
+		visibility: hidden;
+
+	}
+	100%{
+		visibility: visible;
+
+	}
+}
+.drp-content li a{
+	color:white;
+	padding:10px;
+	background-color: #333;
+	min-width:0px;
+	margin:0px;
+	display: block;
+}
+.drp-content li a:hover{
+	background-color: red; 
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.6);
+}
+.dropdown:hover .drp-content{
+	visibility: visible;
+	display: block;
+
+}
+.row,.section{
+	display: flex;
+	flex-wrap: wrap;
+	margin:20px;
+}
+.img-slide{
+	width:800px;
+	height:400px;
+	background-image:linear-gradient(-45deg,purple,red);
+	background-size:cover;
+	margin:10px;
+}
+.img-slide img{
+	box-shadow: ;
+	border-radius:px;
+}
+.about {
+	position: relative;
+	bottom:130px;
+	background-color:rgba(0,0,0,0.7);
+	color:white;
+	padding:15px;
+	font-size:15px;
+	font-weight:;
+	animation:effect 1s linear;
+	transition:500ms linear;
+}
+@keyframes effect{
+	0%{
+		color:rgba(0,0,0,0.4);
+	}
+	75%{
+		color:rgba(0,0,0,0.4);
+
+	}
+	100%{
+		color:white;
+	}
+}
+.collapse{
+	width: 600px;
+	height:400px;
+	box-shadow:
+	margin:10px;
+	margin-top:10px;
+}
+.collapse p{
+	padding: 20px;
+}
+.latest-news,.events,.tender,.vacancies{
+	width:320px;
+	height:350px;
+	margin:10px;
+	box-shadow: 0px 3px 5px green;
+	border-radius:15px;
+}
+
+.latest-news h3{
+	text-align:center;
+	padding:15px;
+	background-color: #C75FF1 ;
+	color:white;
+	font-size: 18px;
+}
+.latest-news a{
+	text-decoration: none;
+	color:teal;
+
+}
+.latest-news a:hover{
+	color:black;
+}
+.events h3{
+	text-align:center;
+	padding:15px;
+	background-color:#5FD1F1 ;
+	color:white;
+	font-size: 18px;
+
+}
+.tender h3{
+	text-align:center;
+	padding:15px;
+	background-color:#67F28D  ;
+	color:white;
+	font-size: 18px;
+
+}
+
+.vacancies h3{
+    text-align:center;
+	padding:15px;
+	background-color:#8167F2 ;
+	color:white;
+	font-size: 18px;
+
+
+}
+.mission-vision{
+	display:flex;
+	flex-wrap:wrap;
+}
+.mission,.vision{
+	width:600px;
+	margin:20px;
+	height: 300px;
+	transition: 500ms linear;
+	box-shadow: 0px 2px 5px blue;
+	
+}
+.mission h2{
+	text-align:center;
+	padding:15px;
+	background-color:#8167F2 ;
+	color:white;
+	font-size: 18px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+}
+.vision p{
+	padding:10px;
+	letter-spacing: 0px;
+	color:green;
+	font-size: 18px;
+}
+.mission p{
+	padding: 10px;
+	letter-spacing: 0px;
+	color:orange;
+	font-size: 18px;
+}
+.vision h2{
+	text-align:center;
+	padding:15px;
+	background-color:#67F2A6 ;
+	color:white;
+	font-size: 18px;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+	
+
+}
+.principal-desk{
+	display:flex;
+	flex-wrap: wrap;
+	padding:20px;
+}
+.img{
+	width:350px;
+	height:350px;
+	
+}
+.img img{
+	border-radius:49%;
+	box-shadow: 0px 2px 5px teal;
+}
+
+.img2 img{
+	border-radius: 50%;
+	box-shadow: 0px 2px 5px teal;
+
+}
+.info{
+	width: 400px;
+	height: 300px;
+}
+.info p{
+	padding:20px;
+}
+.info a{
+	text-decoration: none;
+	color:white;
+	padding:10px;
+	background:linear-gradient(-45deg,#67F2A6,#E667F2 );
+	border-radius:30px;
+	margin-left: 10px;
+}
+.footer{
+	display: flex;
+	flex-wrap: wrap;
+	padding:0px;
+	background-color:black;
+}
+.map{
+	padding:20px;
+}
+.abt-tnb,.cnt-info,.emailus{
+	width:250px;
+	height:200px;
+	color:white;
+	margin:20px;
+	padding:20px;
+}
+.footer h2{
+	color:white;
+	background-color: blue;
+	border-radius: 30px;
+	padding: 10px;
+	width:50px;
+	text-align: center;
+}
+.emailus p{
+	padding:0px;
+	color:white;
+}
+
+.abt-tnb p{
+	padding:0px;
+	color:white;
+	
+}
+.cnt-info p{
+	padding:0px;
+	color:white;
+}
+footer{
+	padding:10px;
+	background-color:#34495E; 
+}
+footer h2{
+	color:white;
+	text-align: center;
+
+
