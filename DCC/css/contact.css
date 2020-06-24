@@ -1,0 +1,96 @@
+@media only screen and(max-width:700px){
+	body{
+		background-color:blue;
+		font-family: sofia,sens-serif;
+	}
+}
+
+*{
+	padding: 0px;
+	margin:0px;
+	font-family:;
+
+}
+body{
+	background-color: #e1ecf1;
+	overflow-x: hidden;
+	font-family: sofia;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	font-family: sofia;
+	padding: 30px;
+}
+h2{
+	padding: 20px;
+	text-transform: uppercase;
+	font-weight:bold;
+}
+h5{
+	padding: 10px;
+}
+.callus,.locateus,.mailus{
+	width: 400px;
+	height: 370px;
+	margin:10px;
+	padding:8px;
+	transition: 2s linear;
+	color:white;
+}
+.callus{
+	background-color: #EE57EE ;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.4);
+}
+.locateus{
+	background-color:#6FF1CC;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.4);
+
+}
+.mailus{
+	background-color:#ABEA3C ;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.4);
+
+
+}
+#fn,#ln{
+	width:290px;
+	height:40px;
+}
+.form{
+	padding: 20px;
+}
+.form input,textarea{
+	width: 600px;
+	height:40px;
+	margin:7px;
+	border:none;
+	border-radius: 30px;
+	border:1px solid black;
+	transition: 1s linear;
+}
+.form input:hover{
+	transform: scale(1.09);
+}
+.form textarea:hover{
+	transform: scale(1.09);
+
+}
+input::placeholder{
+	color:teal;
+	text-align:center;
+}
+textarea::placeholder{
+	color:teal;
+	text-align:center;
+}
+button{
+	border:none;
+	color:white;
+	font-weight: bold;
+	padding:10px;
+	width: 600px;
+	height: 40px;
+	border-radius:30px;
+	background: linear-gradient(45deg,lightgreen,blue);
+}

@@ -1,0 +1,395 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+}
+body{
+	background-color: #e1ecf1;
+	box-sizing: border-box;
+}
+::-webkit-scrollbar{
+	width:15px; 
+}
+::-webkit-scrollbar-track{
+	box-shadow: inset 0px 0px 5px grey; 
+	border-radius:10px;
+
+}
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(0deg,red,blue);
+	border-radius: 10px;
+    animation:animate 5s linear infinite;
+	transition: .5s linear;
+}
+nav {
+	background-color:#001f44;
+}
+nav ul{
+	width:100%;
+	margin: 0 auto;
+	padding: 0px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	display: inline-block;
+	text-decoration:none;
+	color:white;
+	font-size:20px;
+	padding:12px 16px;
+}
+ul li a:hover{
+	text-decoration:none;
+	color:white;
+	background-color: red;
+}
+ul li a:active{
+	text-decoration:none;
+	color:white;
+	background-color:blue;
+}
+.toggle{
+	width:100%;
+	color:white;
+	background-color:#001f44;
+	padding:5px;
+	font-family:;
+	display: none;
+}
+@media screen and (max-width: 600px){
+	.toggle{
+		display:block;
+		transition:0.5s;
+	}
+	ul{
+		width:100%;
+		padding:10px;
+		display: none;
+	}
+	ul li{
+		display:block;
+		text-align: center;
+	}
+	.active{
+		display: block;
+		transition:0.8s linear;
+
+	}
+	.toggle{
+		transition:all 500ms linear;
+
+	}
+	section img{
+		width:100%;
+		height:100px;
+	}
+	.git{
+		padding:20px;
+		width:auto;
+	}
+}
+section img{
+	width:100%;
+	height:500px;
+}
+.about{
+	display:flex;
+	flex-wrap:wrap;
+	padding:20px;
+	color: white;
+	position: relative;
+	overflow: hidden;
+	height:auto;
+	flex-direction: row;
+	shape-outside: circle();
+	margin-top:0px;
+	background-color: #222f3e;
+}
+.director{
+	width:500px;
+	shape-outside: circle();
+}
+.about .img img{
+	position: relative;
+	border-radius:50%;
+	width:400px;
+	height:400px;
+	float:left;
+	shape-outside:circle(6px);
+	margin:20px;
+}
+.about .img1 img{
+	position: relative;
+	border-radius:50%;
+	width:300px;
+	height:300px;
+	float:right;
+	shape-outside: circle();
+	margin:20px;
+}
+
+
+.content1{
+	margin-bottom: 50px;
+}
+.place{
+	display: flex;
+	flex-wrap: wrap;
+	background-color:black;
+	padding:50px;
+}
+.square{
+	position: relative;
+	width:450px;
+	height: 450px;
+	margin:50px;
+}
+.square span:nth-child(1){
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #fff;
+	border-radius:38% 62% 63% 37%/41% 44% 56% 37%; 
+	transition: .5s linear;
+	animation: animate1 4s linear infinite;
+}
+.square:hover span:nth-child(1){
+	background-color: blue;
+	border:none;
+}
+@keyframes animate1{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.square span:nth-child(2){
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #fff;
+	border-radius:38% 62% 63% 37%/41% 44% 56% 37%; 
+	transition: .5s linear;
+	animation: animate1 10s linear infinite;
+}
+.square:hover span:nth-child(2){
+	background-color:blue;
+	border:none;
+}
+@keyframes animate1{
+	0%{
+		transform:rotate(360deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+.square span:nth-child(3){
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #fff;
+	border-radius:38% 62% 63% 37%/41% 44% 56% 37%; 
+	transition: .5s linear;
+	animation: animate3 4s linear infinite;
+}
+.square:hover span:nth-child(3){
+	background-color:blue;
+	border:none;
+}
+@keyframes animate3{
+	0%{
+		transform:rotate(270deg);
+	}
+	100%{
+		transform: rotate(30deg);
+	}
+}
+.content{
+	color:white;
+	position: absolute;
+	left:80px;
+	top:90px;
+}
+#fm{
+	text-align: center;
+	font-family: sans-serif;
+	font-family:sens-serif,Faster One;
+	text-transform: uppercase;
+	position:relative;
+	color:red;
+
+}
+#venue{
+	text-align: center;
+	font-family: sans-serif;
+	font-family: Monoton;
+	position:relative;
+	color:yellow;
+	top:70px;
+
+}
+
+#fee{
+	padding:10px;
+}
+.fee{
+	display:flex;
+	flex-wrap:wrap;
+	height:auto;
+	padding:10px;
+}
+.fee table th,tr,td{
+	padding: 10px; 
+}
+.fee table tr td nth:child(2){
+	background-color: red;
+}
+.sem3,.sem5{
+	margin: 50px;
+}
+.gradient{
+	height:180px;
+	width:100%;
+	background:linear-gradient(-45deg,lightgreen,#17a2b8); 
+	animation:animate 5s linear infinite;
+	transition: .5s linear;
+}
+@keyframes animate{
+	0%,100%{
+		filter: hue-rotate(0deg);
+		 
+	}
+	50%{
+		filter:hue-rotate(360deg);
+	}
+}
+  .pic img{
+	height:250px;
+	width:100%;
+	position:relative;
+	border-radius:50%;
+	bottom:100px;
+	padding:0px;
+	border:5px solid white;
+}
+.content{
+	background-color: white: 
+	animation:animate 5s linear infinite;
+	transition: .5s linear;
+}
+@keyframes animate{
+	0%,100%{
+		filter: hue-rotate(0deg);
+		 
+	}
+	50%{
+		filter:hue-rotate(360deg);
+	}
+}
+.content h5{
+	position:relative;
+	padding: 5px;
+	bottom:100px;
+	 
+
+}
+.content p{
+	padding:5px;
+	bottom:100px;
+	position: relative;
+
+}
+.card1{
+	background:white;
+	color:black;
+	transform:skewY(-20deg);
+	
+}
+
+.contact{
+	padding:20px;
+	background-color:black;
+	color:white;
+	/*display: flex;
+	flex-wrap: wrap;*/
+
+}
+.contact #fn,#ln{
+	
+}
+.contact input{
+	width:400px;
+	height:50px;
+	margin:10px;
+	border:none;
+	border-radius:30px 0px 30px 0px;
+
+}
+.contact ::placeholder{
+	color:teal;
+	text-align: center;
+}
+.contact button{
+	padding: 20px;
+	width: 400px;
+	height: 50px; 
+	border-radius:50px;
+	border:none;
+	background:linear-gradient(45deg,purple,pink);
+	font:bold;
+}
+.contact button:hover{
+	background:linear-gradient(75deg,blue,purple);
+	color:white;
+}
+.footer{
+	padding:20px;
+	background-color:teal;
+	color:white;
+	text-align:center;
+	font-weight:bolder;
+}
+.footer #insta,#fb,#twit,#yt{
+	font-size:36px;
+	color:white;
+	margin:10px;
+}
+.footer #insta{
+	background:linear-gradient(45deg,orange,purple);
+	padding:5px;
+	border-radius:10px;
+}
+.footer #fb{
+	color:blue;
+	background-color:white;
+	padding:5px;
+	border-radius:10px;
+}
+.footer #yt{
+	color:red;
+	background-color:white;
+	padding:3px;
+	border-radius:10px;
+}
+.footer #twit{
+	color:#00acee;
+	background-color:white;
+	padding:5px;
+	border-radius:10px;
+}
+.git{
+	background-color:black;
+	color:white;
+	padding:20px;
+}

@@ -1,0 +1,39 @@
+.form{
+	padding: 50px;
+	background-color: white;
+	width: 60%;
+	margin-top:50px;
+}
+.form input,select{
+	width: 400px;
+	height: 40px;
+	margin:15px;
+	border:none;
+	border-radius: 50px;
+	border:2px solid blue;
+}
+.form ::placeholder{
+	text-align:center;
+	color:teal;
+}
+.form option{
+	text-align:center;
+}
+.form button{
+	width:400px;
+	border:none;
+	color:white;
+	background: linear-gradient(-45deg,lightgreen,blue);
+	border-radius:50px;
+	height: 40px;
+	font:bolder;
+}
+.form select{
+	text-align:center;
+}
+@media only screen and(max-width:700px){
+	.form{
+		background-color: black;
+		width:100%;
+	}
+}

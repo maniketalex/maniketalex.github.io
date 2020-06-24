@@ -1,0 +1,51 @@
+.faculty{
+	display: flex;
+	flex-wrap: wrap;
+	padding:25px;
+
+}
+.acard{
+			width: 330px;
+			height: 550px;
+			box-shadow: 0px 3px 5px green;
+			margin:10px;
+		}
+		.img img{
+			width: 100%;
+			height:250px;
+		}
+		.para p{
+			padding: 5px;
+			margin-top:0px;
+		}
+		.para a{
+			text-decoration:none;
+			padding: 10px;
+			color: white;
+			border-radius: 30px;
+			background-color:black;
+			animation: animate 2s linear infinite;
+
+		}
+		.para a:hover{
+			background-color: blue;
+			box-shadow: 0pc 3px 5px rgba(0,0,0,1);
+			opacity: 0.8;
+		}
+		.acard:hover{
+			box-shadow: 0px 3px 4px rgba(0,0,0,2);
+		}
+		
+		.icon i{
+			margin: 5px;
+			margin-top: 15px;
+			padding: 10px;
+			border-radius: 30px;
+			background-color: #3333; 
+			transition:200ms linear;
+		
+		}
+		.icon i:hover{
+			transform: scale(1.4);
+			opacity: 0.7;
+		}
