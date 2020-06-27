@@ -1,0 +1,83 @@
+body{
+			background-image: url(images3.jpg);
+			background-size:cover;
+		}
+		.singup{
+			float:center;
+			height:600px;
+			width:40%;
+			background-color: #3333;
+			box-shadow: 3px 8px 5px 5px  rgba(0,0,0,0.4);
+
+		}
+		.singup h1{
+			color:white;
+			background-color:blue;
+			text-shadow:3px 4px 20px ;
+			font-family:freestyle script;
+			font-size:50px;
+			padding:10px;
+			text-shadow: 2px 5px 5px red;
+		}
+		.singup input[type=text]{
+			padding:10px;
+			width:300px;
+			margin:10px;
+			border-radius: 20px;
+			border:none;
+
+
+		}
+		.singup input[type=text]:hover{
+			border: 1px solid blue;
+		}
+		.singup input[type=email]{
+			padding:10px;
+			width:300px;
+			margin:10px;
+			border-radius: 20px;
+			border:none;
+		}
+		.singup input[type=email]:hover{
+			border:1px solid blue;
+		}
+		.singup input[type=password]{
+			padding:10px;
+			width:300px;
+			margin:10px;
+			border-radius: 20px;
+			border:none;
+		}
+		.singup input[type=password]:hover{
+			border:1px solid blue;
+		}
+		.singup button[type=submit]{
+			padding:10px;
+			width:150px;
+			margin-left: 10px;
+			border:none;
+			color:white;
+			background-color:blue;
+			border-radius: 20px;
+		}
+		.singup input[type=reset]{
+			padding:10px;
+			width:150px;
+			margin-left: 10px;
+			border:none;
+			color:white;
+			background-color:blue;
+			border-radius: 20px;
+		}
+		.singup input[type=reset]:hover{
+			background-color: green;
+		}
+		.singup button[type=submit]:hover{
+			background-color:green;
+
+		}
+		.singup select[type=option]{
+			border-radius:20px;
+
+		}
+		

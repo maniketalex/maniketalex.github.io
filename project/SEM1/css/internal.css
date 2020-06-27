@@ -1,0 +1,33 @@
+table{
+	border-collapse: collapse;
+	border:2px solid white;
+	box-shadow: 0px 12px 18px 5px rgba(0,0,0,0.9);
+	background-color:teal;
+}
+
+table td{
+	padding:20px;
+}
+table tr{
+	color:white;
+	border:1px solid white;
+	font-weight: 700px;
+}
+table a{
+	text-decoration: none;
+	color:white;
+	background-color:red;
+	padding:15px;
+
+}
+#head td{
+	color:white;
+	background-color:blue;
+	text-align: center;
+
+}
+caption{
+	color:white;
+	margin-bottom: 50px;
+	font-size:40px;
+}

@@ -1,0 +1,145 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin:auto;
+	width: 100%;
+}
+#navbar ul{
+	padding:0px;
+	margin:0px;
+	list-style-type: none;
+}
+#navbar li{
+	display: inline;
+
+}
+#navbar a{
+	padding:10px;
+	font-size: 18px;
+	text-decoration: none;
+	color:white;
+	display: inline-block;
+}
+#navbar a:hover{
+	color:red;
+}
+#navbar{
+	padding:10px;
+	background-color: #333;
+	overflow-y: hidden;
+	background-image:linear-gradient(-90deg ,cyan,magenta);
+}
+.aside{
+	float:right;
+	width:25%;
+	margin-right:20px;
+	height:800px;
+}
+#login{
+	float:right;
+}
+#aside{
+	float:right;
+	width:100%;
+	box-shadow: 0px 18px 12px 5px rgba(0,0,0,0.2);
+	height: 350px;
+	margin-top: 10px;
+}
+#aside h1{
+	text-align: center;
+	background-color: blue;
+	color:white;
+	padding: 20px;
+	margin-top: 0px;
+	background-image:linear-gradient(-90deg ,purple,blue);
+}
+#mainbar{
+	float:left;
+	width:73%;
+	height: 800px;
+	background-image: url(back.jpg);
+	background-size:cover;
+}
+
+/*#feedback{
+	float:right;
+	width:25%;
+	box-shadow: 0px 18px 12px 5px rgba(0,0,0,0.2);
+	height: 350px;
+	margin-right: 70px;
+}
+#feedback h1{
+	text-align: center;
+	background-color: blue;
+	color:white;
+	padding: 20px;
+	margin-top: 0px;
+	background-image:linear-gradient(-90deg ,blue,purple);*/
+}
+#aside p{
+	padding:4px;
+}
+
+#popular{
+	width:100%;
+	box-shadow: 0px 18px 12px 5px rgba(0,0,0,0.2);
+	height:395px;
+	margin-right:40px;
+	margin-top:400px;
+}
+#popular h1{
+	text-align: center;
+	background-color: blue;
+	color:white;
+	padding: 20px;
+	margin-top:150px;
+	/*background-image:linear-gradient(-90deg ,purple,blue);*/
+}
+#popular p{
+	padding:4px;
+}
+/*#popular:hover{
+	background-color:black;
+	opacity: 0.8;
+	color:white;
+}*/
+#popular input{
+	border:none;
+	float:right;
+	padding:10px;
+	cursor:pointer;
+	margin-right: 30px;
+	border-radius:20px;
+	background-image:linear-gradient(-90deg ,blue,purple);
+	color:white;
+	width:100px;
+	margin-top:20px;
+	
+}
+.dropdown {
+  display:inline-block;
+}
+
+#dropdown-content {
+  display:none;
+  background-color: #f9f9f9;
+  min-width:160px;
+  box-shadow: 0px 12px 18px 5px rgba(0,0,0,0.2);
+  position:absolute;
+  z-index: 1;
+  background-image: linear-gradient(-90deg,indigo,cyan);
+}
+
+#dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:block;
+}
+
+#dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover #dropdown-content {
+  display:block;
+}
