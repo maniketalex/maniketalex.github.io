@@ -1,0 +1,84 @@
+.info{
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.4);
+	
+}
+.name{
+	padding: 10px;
+}
+.info img{
+	position: relative;
+	top:50px;
+	left:80px;
+	border-radius: 60%;
+	padding:5px;
+	height: 200px;
+	width:200px;
+	
+}
+.gradient{
+	background-image: linear-gradient(to right, #A4E7E7  ,#B454E7 );
+}
+.gradient1{
+	background-color: linear-gradient(-45deg,#D757EE,#57EE76);
+}
+.padd{
+	padding:5px;
+	background-color: #ccc;
+}
+form{
+	box-shadow:0px 3px 5px green;
+}
+.notice{
+	height: 400px;
+	box-shadow: 0px 3px 5x rgba(0,0,0,0.4);
+
+}
+.notic,.events,.tender,.Vacancies {
+	width:330px;
+	height:330px;
+	background-color:;
+	border-radius: 0px 0px 20px 20px;
+	box-shadow:0px 3px 5px rgba(0,0,0,0.4);
+
+}
+
+.notic h4{
+	padding:10px;
+	color:white;
+	background-color: #4DF26F;
+}
+.notic{
+	animation: animate 1s linear infinite;
+	transition:0.5s linear;
+}
+@keyframes animate{
+	0%{
+		transform: scale(1.0);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform:scale(1.0);
+	}
+}
+.events h4{
+	padding:10px;
+	color:white;
+	background-color:#4AF3C7 ;
+
+}
+.tender h4{
+	padding:10px;
+	color:white;
+	background-color:#E749EE ;
+
+
+}
+.Vacancies h4{
+	padding:10px;
+	color:white;
+	background-color:#4CF2F1;
+
+
+}

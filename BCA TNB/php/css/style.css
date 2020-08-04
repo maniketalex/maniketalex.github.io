@@ -1,0 +1,23 @@
+body
+{
+	background-color:#fff;
+}
+.row,.intro{
+	display:flex;
+	flex-wrap:wrap;
+}
+.carousel{
+	width:900px;
+	margin:2px;
+	height:380px;
+	padding:0px;
+	border:black;
+}
+.accordian{
+	width:600px;
+	height:400px;
+	margin:2px;
+}
+.jumbo{
+	margin:5px;
+}
